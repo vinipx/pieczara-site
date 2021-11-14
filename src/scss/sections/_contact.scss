@@ -19,6 +19,7 @@ section#contact {
             input,
             textarea {
                 padding: 1.25rem;
+                opacity: 10%;
             }
 
             input.form-control {
@@ -32,6 +33,7 @@ section#contact {
             textarea {
                 height: 100%;
                 min-height: 10rem;
+                color: white;
             }
         }
 
@@ -47,25 +49,25 @@ section#contact {
         ::-webkit-input-placeholder {
             font-family: $headings-font-family;
             font-weight: $headings-font-weight;
-            color: $gray-400;
+            color: white;
         }
 
         :-moz-placeholder {
             font-family: $headings-font-family;
             font-weight: $headings-font-weight;
-            color: $gray-400;
+            color: white;
         }
 
         ::-moz-placeholder {
             font-family: $headings-font-family;
             font-weight: $headings-font-weight;
-            color: $gray-400;
+            color: white;
         }
 
         :-ms-input-placeholder {
             font-family: $headings-font-family;
             font-weight: $headings-font-weight;
-            color: $gray-400;
+            color: white;
         }
     }
 }
