@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Patrycja Pieczara - Portfolio
+        title Patrycja Pieczara
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
@@ -46,9 +46,10 @@ html(lang='en')
                         
         // Masthead
         header.masthead
-            .container
                 .masthead-heading.text-uppercase Patrycja Pieczara
+                .masthead-subheading.text-uppercase Conductor
                 .container
+                        hr
                         .col-md-offset-3
                             a.btn.btn-dark.btn-social.mx-2(href='#!')
                                 i.fab.fa-twitter
@@ -58,12 +59,12 @@ html(lang='en')
                                 i.fab.fa-instagram
                             a.btn.btn-dark.btn-social.mx-2(href='https://www.youtube.com/user/Muchiti7')
                                 i.fab.fa-youtube
-                hr
-                a.btn.btn-primary.btn-lg.text-uppercase(href='#services') English
-                a.btn.btn-primary.btn-lg.text-uppercase(href='#services') Polish
+                
+                //- a.btn.btn-primary.btn-m.text-uppercase(href='#services') English
+                //- a.btn.btn-primary.btn-m.text-uppercase(href='#services') Polish
 
         // Biography
-        section#services.page-section
+        section#services.page-section.bg-light
             .container
                 .text-center
                     h2.section-heading.text-uppercase Biography
@@ -72,9 +73,14 @@ html(lang='en')
                         h4.my-3 Conductor
                         p.text-muted
                             | Born in Kraków, conductor Patrycja Pieczara made her debut with the Polish National Radio Symphony and Kraków Philharmonic orchestras in 2011 and is increasingly appearing as a guest conductor throughout the region.
-                            | In 2016/17 season among others, she will debut with the Scottish National Symphony Orchestra, Orchestra of the Swan (UK).
+                            br
+                            | She has debuted with such an outstanding orchestras as Royal Scottish National  Orchestra in Glasgow, Royal Liverpool Philharmonic, Tokyo Symphony Orchestra.
+                            br
+                            | During the 2017/2018 season she was regularly returning to UK to conduct Orchestra of  the Swan (UK).
+                            | During the 2016/17 season she had her Mexican debut with Oaxaca  Symphony Orchestra. She also opened 114th season of the Lviv Philharmonic Orchestra.
                             br 
-                            | During the 2015/16 season she had her UK debut with Royal Liverpool Philharmonic Orchestra and Mexican debut with Oaxaca Symphony Orchestra. She also opened 114th season of the Lviv Philharmonic Orchestra.
+                            | She was performing with such an outstanding artist as Alina Ibrahgimova, Roderick  Williams, David Le Page, Madeleine Shaw, Marta Klimasara, Pierre Genisson and others.
+                            br
                             br
                             | In 2014 she was appointed Associate Conductor at the Grand Theatre in Poznań, where she conducted Carmen in June. She leads the opening nights of Stravinsky’s Le Rossignol and Ravel’s L'enfant et les sortilèges there this season.
                             | Other 2014/15 highlights include her debuts with the Tokyo Symphony, Bilkent Symphony (Turkey) and Szczecin Philharmonic orchestras. She also led the Beethoven Academy Orchestra, founded by Elżbieta and Krzysztof Penderecki, in a special concert premiering several orchestral works by late-romantic Polish-German composer Xaver Scharwenka.
@@ -84,8 +90,11 @@ html(lang='en')
                             br
                             | Pieczara began her musical studies at the piano and holds Master’s degrees in Music Theory and Conducting from the Kraków Music Academy, where she studied with Josef Radwan and Tadeusz Strugala. In 2016 she received PhD degree at the Music Academy in Krakow. 
                             br
-                            | As a part of her dissertation she made Polish premiere of Xaver Scharwenka Symphony in C-minor after 130 years of on Xaver Scharwenka. She has worked with Neeme and Paavo Järvi at the Järvi Summer Festival (Estonia), Helmut Rilling at the International Bach Academy Stuttgart, and Mark Stringer at the Internationale Sommerakademie Wien.
+                            | As a part of her dissertation she made Polish premiere of Xaver Scharwenka Symphony in C-minor after 130 years of on Xaver Scharwenka.
+                            | In 2010 she was appointed Assistant to the Music Director at the Kraków Opera House. Since 2010 she is appointed an Assistant Professor of the Music Academy in Krakow ,  taking over the Academy Symphony Orchestra.
+                            | She has worked with Neeme and Paavo Järvi at the Järvi Summer Festival (Estonia), Helmut Rilling at the International Bach Academy Stuttgart, and Mark Stringer at the Internationale Sommerakademie Wien.
                             | In December 2009 she was chosen to work with Colin Metters, Peter Stark and Sean Farrell as part of London’s International Conducting Masterclass, and in 2010 she was appointed Assistant to the Music Director at the Kraków Opera House.
+                            | In April 2020, she was again invited by the Royal  Opera House and the National Opera Studio to attend an over 10-week opera webinar.
 
         // Media
         section#portfolio.page-section.bg-light
@@ -142,17 +151,32 @@ html(lang='en')
                                     .portfolio-hover-content
                                         i.fas.fa-plus.fa-3x
                                 img.img-fluid(src='assets/img/bgphoto.jpg', alt='...')
+            br                                
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Videos
+                br
+                .row 
+                    .col
+                            iframe(type='text/html' width='635' height='390'
+                            src='https://www.youtube.com/embed/KrsLMYl6EUU'
+                             frameborder='1')
+                    .col
+                            iframe(type='text/html' width='635' height='390'
+                            src='https://www.youtube.com/embed/OQbPOxWYUwI'
+                             frameborder='0')
 
         // Concerts
         section#about.page-section
             .container
                 .text-center
                     h2.section-heading.text-uppercase Performances
-                    h3.section-subheading.text-muted Performances calendar.
+                br
+                br
                 ul.timeline
                     li
                         .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/bgphoto.jpg', alt='...')
+                            img.rounded-circle.img-fluid(src='assets/img/bgphoto.jpg', height='100', alt='...')
                         .timeline-panel
                             .timeline-heading
                                 h4 February 2018
@@ -197,7 +221,6 @@ html(lang='en')
             .container
                 .text-center
                     h2.section-heading.text-uppercase Contact Me
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
 
                 // * * * * * * * * * * * * * * *
                 // * * SB Forms Contact Form * *
@@ -279,7 +302,7 @@ html(lang='en')
 
                     // Submit Button
                     .text-center
-                        button#submitButton.btn.btn-primary.btn-xl.text-uppercase.disabled(type='submit') Send Message
+                        button#submitButton.btn.btn-primary.btn-m.text-uppercase.disabled(type='submit') Send Message
 
         // Footer
         footer.footer.py-4

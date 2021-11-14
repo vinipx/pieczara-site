@@ -59,8 +59,8 @@
             position: absolute;
             z-index: 100;
             left: 0;
-            width: 80px;
-            height: 80px;
+            width: 30px;
+            height: 100%;
             margin-left: 0;
             text-align: center;
             color: white;
@@ -140,7 +140,7 @@
             .timeline-image {
                 left: 50%;
                 width: 100px;
-                height: 100px;
+                height: 100%;
                 margin-left: -50px;
 
                 h4 {
@@ -170,7 +170,7 @@
 
             .timeline-image {
                 width: 150px;
-                height: 150px;
+                height: 100%;
                 margin-left: -75px;
 
                 h4 {
