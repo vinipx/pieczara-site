@@ -40,7 +40,7 @@ sans-serif,
 "Segoe UI Symbol",
 "Noto Color Emoji";
 
-$heading-title-font-family: 'Playfair Display SC';
+$heading-title-font-family: 'Playfair Display SC', serif;
 
 // Create a subheadings font family
 
@@ -48,8 +48,8 @@ $subheadings-font-family: $font-family-base;
 
 // Override Bootstrap default headings variables
 
-$headings-font-weight: 700;
-$headings-letter-spacing: 0.0625em;
+$headings-font-weight: 400;
+$headings-letter-spacing: -0.04em;
 
 // Override default Bootstrap line height variables
 
