@@ -32,7 +32,9 @@ p {
     padding: 6rem 0;
 
     h2.section-heading {
-        font-size: 2.5rem;
+        font-family: $heading-title-font-family;
+        color: $white;
+        font-size: 3rem;
         margin-top: 0;
         margin-bottom: 1rem;
     }

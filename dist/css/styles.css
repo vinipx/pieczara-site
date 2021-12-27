@@ -77,7 +77,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.2;
 }
 
@@ -10872,7 +10872,9 @@ p {
   padding: 6rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
-  font-size: 2.5rem;
+  font-family: "Playfair Display SC", serif;
+  color: #fff;
+  font-size: 3rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -10893,7 +10895,7 @@ p {
   padding: 1.25rem 2.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .btn-social {
@@ -10926,8 +10928,8 @@ p {
 #mainNav .navbar-brand {
   color: #fff6d7;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  letter-spacing: 0.0625em;
+  font-weight: 400;
+  letter-spacing: -0.04em;
   text-transform: uppercase;
 }
 #mainNav .navbar-brand img {
@@ -10937,10 +10939,10 @@ p {
   text-align: center;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.95rem;
+  font-family: "Playfair Display SC", serif;
+  font-size: 1.3rem;
   color: #fff;
-  letter-spacing: 0.0625em;
+  letter-spacing: -0.04em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #fff6d7;
@@ -10995,22 +10997,22 @@ header.masthead {
   background-size: cover;
 }
 header.masthead .masthead-subheading {
-  padding-top: 5rem;
-  font-size: 1.25rem;
+  padding-top: 10rem;
+  font-size: 2.25rem;
   font-weight: 500;
   line-height: 1.3rem;
   letter-spacing: 0.08em;
-  font-family: "Playfair Display SC";
+  font-family: "Playfair Display SC", serif;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 header.masthead .masthead-heading {
-  padding-top: 5rem;
+  padding-top: 10rem;
   font-size: 4rem;
   font-weight: 700;
   letter-spacing: -0.04em;
   word-spacing: 0em;
-  margin-bottom: 8rem;
-  font-family: "Playfair Display SC";
+  margin-bottom: 3rem;
+  font-family: "Playfair Display SC", serif;
   text-shadow: 7px 5px 7px rgba(0, 0, 0, 0.5);
 }
 
@@ -11021,27 +11023,32 @@ header.masthead .masthead-heading {
   }
   header.masthead .masthead-subheading {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 2.25rem;
     margin-bottom: 1rem;
   }
   header.masthead .masthead-heading {
-    font-size: 4rem;
-    font-weight: 700;
-    margin-bottom: 8rem;
+    padding-bottom: 2rem;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    margin-bottom: 2rem;
   }
 }
-#portfolio .portfolio-item {
+section#portfolio {
+  background-color: black;
+}
+section#portfolio .portfolio-item {
   max-width: 26rem;
   margin-left: auto;
   margin-right: auto;
 }
-#portfolio .portfolio-item .portfolio-link {
+section#portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
   margin: 0 auto;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+section#portfolio .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
   position: absolute;
   width: 100%;
@@ -11052,28 +11059,28 @@ header.masthead .masthead-heading {
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+section#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 0.5rem;
   color: white;
 }
-#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+section#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
   opacity: 1;
 }
-#portfolio .portfolio-item .img-fluid {
+section#portfolio .portfolio-item .img-fluid {
   height: 100%;
 }
-#portfolio .portfolio-item .portfolio-caption {
+section#portfolio .portfolio-item .portfolio-caption {
   padding: 1.5rem;
   text-align: center;
   background-color: #fff;
 }
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+section#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 0;
 }
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+section#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -11122,6 +11129,10 @@ header.masthead .masthead-heading {
   opacity: 0.3;
 }
 
+section#performances {
+  background-color: black;
+}
+
 .timeline {
   position: relative;
   padding: 0;
@@ -11139,7 +11150,7 @@ header.masthead .masthead-heading {
 }
 .timeline > li {
   position: relative;
-  min-height: 30px;
+  min-height: 10px;
   margin-bottom: 10px;
   align-items: center;
 }
@@ -11173,15 +11184,19 @@ header.masthead .masthead-heading {
   position: absolute;
   z-index: 100;
   left: 0;
-  width: 5px;
+  width: 2px;
   margin: 10px;
-  height: 100%;
+  height: 50%;
   margin-left: 30;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 2px solid #e9ecef;
   border-radius: 100%;
   background-color: #fff6d7;
+}
+.timeline > li .timeline-image .rounded-circle .img-fluid {
+  height: 50%;
+  max-width: 50%;
 }
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
   font-size: 10px;
@@ -11209,6 +11224,7 @@ header.masthead .masthead-heading {
   margin-bottom: 0;
 }
 .timeline .timeline-heading h6, .timeline .timeline-heading .h6 {
+  color: white;
   font-weight: lighter;
 }
 .timeline .timeline-heading h4, .timeline .timeline-heading .h4 {
@@ -11216,12 +11232,19 @@ header.masthead .masthead-heading {
   color: inherit;
 }
 .timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4 {
+  color: white;
+  font-size: 14px;
   font-weight: bold;
   text-transform: none;
 }
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
   margin-bottom: 0;
+}
+.timeline .timeline-body > ul.text-muted,
+.timeline .timeline-body > p.text-muted {
+  font-size: 12px;
+  color: #bfbfbf !important;
 }
 
 @media (min-width: 768px) {
@@ -11299,7 +11322,7 @@ header.masthead .masthead-heading {
   }
 }
 section#contact {
-  background-color: #212529;
+  background-color: black;
   background-image: url("../assets/img/bgcontact.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -11307,15 +11330,23 @@ section#contact {
 section#contact .section-heading {
   color: #fff;
 }
+section#contact .invalid-feedback {
+  color: white;
+  font-size: 0.7rem;
+  font-style: italic;
+  font-weight: light;
+}
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
 }
 section#contact form#contactForm .form-group input,
 section#contact form#contactForm .form-group textarea {
   padding: 1.25rem;
+  color: white;
   opacity: 10%;
 }
-section#contact form#contactForm .form-group input.form-control {
+section#contact form#contactForm .form-group input.form-control p {
+  color: white;
   height: auto;
 }
 section#contact form#contactForm .form-group-textarea {
@@ -11335,22 +11366,22 @@ section#contact form#contactForm .form-control:focus {
 }
 section#contact form#contactForm ::-webkit-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
+  font-weight: 400;
   color: white;
 }
 section#contact form#contactForm :-moz-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
+  font-weight: 400;
   color: white;
 }
 section#contact form#contactForm ::-moz-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
+  font-weight: 400;
   color: white;
 }
 section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
+  font-weight: 400;
   color: white;
 }
 
@@ -11361,15 +11392,19 @@ section#contact form#contactForm :-ms-input-placeholder {
   background: black;
 }
 
-section#services {
+section#biography {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/img/photos/024 Patrycja Pieczara 26-10-2018.jpg");
   background-position: center center;
   background-size: cover;
 }
-section#services h2, section#services .h2, section#services h4, section#services .h4,
-section#services p.text-muted {
+section#biography h2, section#biography .h2, section#biography h4, section#biography .h4,
+section#biography p.text-muted {
   color: #e6e6e6;
 }
-section#services p.text-muted {
+section#biography p.text-muted {
+  font-family: "Playfair Display SC", serif;
   color: #e6e6e6 !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  text-align: justify;
 }
